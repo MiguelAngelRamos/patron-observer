@@ -24,5 +24,17 @@ class Subject {
       e.refresh(data)
     });
   }
+  
+}
 
+//* Observer
+class Observer {
+
+  constructor(fn) {
+    this.fn = fn;
+  }
+
+  refresh(data) {
+    this.fn(data);
+  }
 }
